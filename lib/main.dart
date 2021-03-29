@@ -5,6 +5,8 @@
 
 import 'package:flutter/material.dart';
 
+import './textControl.dart';
+
 void main() {
   runApp(App());
 }
@@ -34,7 +36,7 @@ class _AppState extends State<App> {
         body: Column(
           children: [
             Text(message),
-            RaisedButton(child: Text("Change Text"), onPressed: changeText)
+            TextControl(changeText),
           ],
         ),
       ),
